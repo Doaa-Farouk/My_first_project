@@ -1,0 +1,97 @@
+body {
+    background-color: black;
+}
+
+.container {
+    text-align: center;
+    /* background-color: #8d1f28;*/
+}
+
+p.close {
+    border-radius: 100%;
+    margin-left: 402px;
+    /* margin-bottom: 0px; */
+    margin-top: -50px;
+    padding: 15px;
+    background-color: #8d1f28;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    color: #ddd;
+}
+
+body dialog {
+    width: 400px;
+    height: 550px;
+    border-radius: 10px;
+    margin-top: 60px;
+    padding: 30px 30px 0;
+    font-family: "cocoonCustomPrimary", "sans-serif";
+}
+
+.credentials {
+    border-radius: 5px;
+    width: 380px;
+    height: 45px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    border: 1px solid #ddd;
+}
+
+::placeholder {
+    font-family: "cocoonCustomPrimary", "sans-serif";
+    color: gray;
+    font-size: large;
+}
+
+a {
+    text-decoration: none;
+}
+
+.R {
+    float: right;
+}
+
+.r {
+    text-align: left;
+    color: gray;
+}
+
+.log {
+    border-radius: 5px;
+    width: 390px;
+    height: 55px;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    padding-left: 10px;
+    text-align: center;
+    background-color: #8d1f28;
+    font-family: "cocoonCustomPrimary", "sans-serif";
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid rgb(94, 72, 72);
+}
+
+.log:hover {
+    background-color: rgb(70, 40, 40);
+}
+
+.txt {
+    text-align: left;
+    font-size: small;
+}
+
+.subs {
+    border-radius: 5px;
+    width: 390px;
+    height: 45px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    text-align: center;
+    background-color: gray;
+    color: white;
+    font-family: "cocoonCustomPrimary", "sans-serif";
+    font-size: large;
+    border: 1px solid #ddd;
+}

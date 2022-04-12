@@ -1,0 +1,152 @@
+body {
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 140%;
+    color: white;
+    height: 1000px;
+    margin-top: 0%;
+}
+
+nav {
+    border-bottom: 1px solid rgb(194, 192, 192);
+    display: flex;
+    align-items: center;
+    font-family: "cocoonCustomPrimary", "sans-serif";
+}
+
+.logo_ul {
+    display: flex;
+    align-items: center;
+}
+
+.login {
+    margin-left: 250px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    color: #FFFFFF;
+}
+
+nav ul li a {
+    padding-left: 15px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: large;
+}
+
+.main-logo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 0px;
+    margin-left: 12px;
+    width: 140px;
+}
+
+.word {
+    margin-top: 230px;
+    margin-left: 100px;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: "cocoonCustomPrimary", "sans-serif";
+}
+
+.about_btn {
+    margin-left: 100px;
+    background-color: transparent;
+    border-radius: 40px;
+    padding: 20px;
+    margin-top: 20px;
+    width: 150px;
+    color: #FFFFFF;
+    border: 1px solid white;
+}
+
+#about {
+    text-align: center;
+    margin-top: 30px;
+    color: gray;
+}
+
+.what_is {
+    font-weight: bold;
+    font-size: 17px;
+    width: 1000px;
+    margin: auto;
+    text-align: center;
+    /* word-spacing: 1px; */
+    letter-spacing: 1px;
+}
+
+h2 {
+    color: #8d1f28;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h5 {
+    color: gray;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.pics {
+    padding: 100px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.pictures {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.logos {
+    width: 80px;
+    /* background-color: black; */
+    padding-left: 20px;
+}
+
+.loogos {
+    width: 200px;
+    margin-left: 300px;
+}
+
+.footer {
+    background-color: rgb(14, 13, 13);
+}
+
+#image {
+    padding: 50px;
+}
+
+#copywrite {
+    color: #FFFFFF;
+    font-size: 15px;
+    width: 400px;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.contact {
+    width: 30px;
+    float: right;
+    padding-top: 80px;
+    margin-right: 80px;
+}
+
+.login ul li i {
+    size: 200px;
+    color: blue;
+}

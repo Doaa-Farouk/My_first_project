@@ -1,0 +1,25 @@
+.container {
+    width: 400px;
+    margin: auto;
+    font-family: "cocoonCustomPrimary", "sans-serif";
+}
+
+h2 {
+    color: black;
+    font-size: 30px;
+}
+
+.x {
+    color: #706969;
+}
+
+.y {
+    color: #8d1f28;
+}
+
+.npt {
+    width: 200px;
+    height: 30px;
+    padding: 4px;
+    /* margin: 30px; */
+}
