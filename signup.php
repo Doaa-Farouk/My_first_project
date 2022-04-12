@@ -1,4 +1,6 @@
-<?php include 'header/header.php'?>
+<?php include 'header/header.php' ?>
+
+<link rel="stylesheet" href="css/signup.css">
 
 <div class="container">
     <h2>New Account</h2>
@@ -30,12 +32,12 @@
         <div>
             <label for="cntry">Country</label>
             <select class="npt" name="cntry" id="cntry">
-            <option value="Yemen">Yemen</option>
-            <option value="Egypt">Egypt</option>
-            <option value="Qatar">Qatar</option>
-            <option value="Jordan">Jordan</option>
-            <option value="Iraq">Iraq</option>
-        </select>
+                <option value="Yemen">Yemen</option>
+                <option value="Egypt">Egypt</option>
+                <option value="Qatar">Qatar</option>
+                <option value="Jordan">Jordan</option>
+                <option value="Iraq">Iraq</option>
+            </select>
 
         </div>
         <hr>
