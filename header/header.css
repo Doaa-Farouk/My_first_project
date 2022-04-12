@@ -1,0 +1,69 @@
+body {
+    margin: 0px;
+}
+
+.head {
+    background-image: linear-gradient(to right, rgb(119, 37, 44), #00000033 100%), url("../images/background.jpg");
+    color: white;
+    width: 100%;
+    height: 270px;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.heaad {
+    display: flex;
+}
+
+nav {
+    border-bottom: 1px solid rgb(194, 192, 192);
+    /* making things in one line  */
+    display: flex;
+    align-items: center;
+    font-family: "cocoonCustomPrimary", "sans-serif";
+}
+
+.logo_ul {
+    display: flex;
+    align-items: center;
+}
+
+.login {
+    margin-left: 250px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    color: #FFFFFF;
+}
+
+ul li a {
+    padding-left: 15px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: large;
+}
+
+.main-logo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 0px;
+    margin-left: 12px;
+    width: 140px;
+}
+
+.h {
+    padding-left: 100px;
+    margin-top: 70px;
+    font-size: 25px;
+}
+
+.path {
+    padding-left: 700px;
+    margin-top: 70px;
+    font-size: 18px;
+}

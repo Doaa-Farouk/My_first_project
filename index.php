@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maharat Tech</title>
     <link rel="stylesheet" href="../fontawesome-free-6.0.0-web/css/regular.css" />
-    <link rel="stylesheet" href="css/indexStyle.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
@@ -17,13 +17,13 @@
                 <img class='main-logo' src="images/LOGO maharatech.png">
                 <ul>
                     <li>
-                        <a href="index.html">Home</a> </li>
+                        <a href="../index.html">Home</a> </li>
                     <li>
-                        <a href="career_talks.html" target="_blank">Career Talks</a></li>
+                        <a href="../career_talks.html" target="_blank">Career Talks</a></li>
                     <li>
-                        <a href="technological_tracks.html" target="_blank">Technological Tracks</a></li>
+                        <a href="../technological_tracks.html" target="_blank">Technological Tracks</a></li>
                     <li>
-                        <a href="industry_parteners.html" target="_blank">Industry Parteners</a></li>
+                        <a href="../industry_parteners.html" target="_blank">Industry Parteners</a></li>
                     <li>
                         <a href="#" target="_blank">Freelancing Initiative</a></li>
                     <li>
@@ -36,7 +36,7 @@
                     <li><i class="fas fa-user"></i></li>
 
                     <li>
-                        <a href="login.html" target="_blank">Login/Register</a>
+                        <a href="../login.php" target="_blank">Login/Register</a>
                     </li>
                 </ul>
             </div>
@@ -94,16 +94,4 @@
             </ul>
         </div>
     </div>
-
-    <div class="footer">
-        <div>
-            <img id="image" src="images/Footerlogos.png" alt="">
-            <img class="contact" src="images/youtu.png" alt="">
-            <img class="contact" src="images/facebook.png" alt="">
-        </div>
-        <p id="copywrite">Copyright © 2020 MAHARA-TECH by ITI. All Rights Reserved</p>
-
-    </div>
-</body>
-
-</html>
+<?php include 'footer/footer.php';

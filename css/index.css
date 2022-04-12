@@ -19,6 +19,14 @@ nav {
     font-family: "cocoonCustomPrimary", "sans-serif";
 }
 
+.main-logo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 0px;
+    margin-left: 12px;
+    width: 140px;
+}
+
 .logo_ul {
     display: flex;
     align-items: center;
@@ -39,14 +47,6 @@ nav ul li a {
     text-decoration: none;
     color: #FFFFFF;
     font-size: large;
-}
-
-.main-logo {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 0px;
-    margin-left: 12px;
-    width: 140px;
 }
 
 .word {
@@ -121,32 +121,4 @@ ul {
 .loogos {
     width: 200px;
     margin-left: 300px;
-}
-
-.footer {
-    background-color: rgb(14, 13, 13);
-}
-
-#image {
-    padding: 50px;
-}
-
-#copywrite {
-    color: #FFFFFF;
-    font-size: 15px;
-    width: 400px;
-    margin: auto;
-    padding-bottom: 30px;
-}
-
-.contact {
-    width: 30px;
-    float: right;
-    padding-top: 80px;
-    margin-right: 80px;
-}
-
-.login ul li i {
-    size: 200px;
-    color: blue;
 }
