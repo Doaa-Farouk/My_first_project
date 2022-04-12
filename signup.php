@@ -1,7 +1,8 @@
 <?php include 'header/header.php'?>
+
 <div class="container">
     <h2>New Account</h2>
-    <p class="x">Have an account?<a href="login.html" target="_blank">Login</a></p>
+    <p class="x">Have an account?<a href="login.php" target="_blank">Login</a></p>
     <form action="" method="post" enctype="multipart/form-data">
 
         <div>

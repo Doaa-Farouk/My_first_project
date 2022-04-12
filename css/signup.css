@@ -14,7 +14,7 @@ h2 {
 }
 
 .y {
-    color: #8d1f28;
+    color: #251ee2;
 }
 
 .npt {
@@ -22,4 +22,6 @@ h2 {
     height: 30px;
     padding: 4px;
     /* margin: 30px; */
+    border: 2px solid gray;
+    border-radius: 50px;
 }
