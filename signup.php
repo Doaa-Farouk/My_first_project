@@ -64,17 +64,21 @@
     include 'connect.php';
     if(isset($_POST['create']))
     {
-        $username = $_POST['usrnm'];
-        $password = $_POST['passwd'];
-        $email = $_POST['email'];
-        // $email_confirmation = $_POST['emailc'];
-        $country = $_POST['cntry'];
-        $major = $_POST['mjr'];
-        // $id_card = $_POST['idcard'];
+        $insert_q = "insert into users(username,password,email,country,major) values(:username, :password, :email,:country,:major)";
+        //use colon only with named parameters
 
-        $insert_q = "insert into users(id,username,password,email,country,major) values(7,'$username', '$password','$email','$country','$major')";
-        $result = $con -> exec($insert_q);
+        //prepare statements to avoid sql injection 
+        $statement = $con ->prepare($insert_q);
+
+        $statement ->bindValue(':username',$_POST['usrnm']);
+        $statement ->bindValue(':password',$_POST['passwd']);
+        $statement ->bindValue(':email',$_POST['email']);
+        $statement ->bindValue(':country',$_POST['cntry']);
+        $statement ->bindValue(':major',$_POST['mjr']);
+
+        $statement -> execute();
     }
-
+    //close connection
+    $con = null;
 ?>
-<?php include 'footer/footer.php';
+<?php include 'header/footer.php';

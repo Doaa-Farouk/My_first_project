@@ -94,4 +94,4 @@
             </ul>
         </div>
     </div>
-<?php include 'footer/footer.php';
+<?php include 'header/footer.php';
