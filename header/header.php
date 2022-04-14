@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="header/header.css">
     <link rel="stylesheet" href="footer/footer.css">
-    <title>Mahara-tech: Cyber Security</title>
+    <title>Mahara-tech: $var</title>
 </head>
 
 <body>
@@ -43,10 +43,10 @@
         </nav>
         <div class="heaad">
             <div class="h">
-                Cyber Security
+                $var
             </div>
             <div class="path">
-                <a href="index.html">Home</a>/Site Pages/<a href="#"> Cyber Security</a>
+                <a href="index.html">Home</a>/Site Pages/<a href="#"> $var</a>
             </div>
         </div>
     </div>
