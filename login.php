@@ -14,7 +14,7 @@
         <div class="container">
             <p class="close">x</p>
             <h2 class="x">Login to your account</h2>
-            <p class="y">Don't have an account?<a href="signup.html" target="_blank"> Sign up!</a></p>
+            <p class="y">Don't have an account?<a href="signup.php" target="_blank"> Sign up!</a></p>
             <br>
             <form>
                 <div>

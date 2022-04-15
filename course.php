@@ -1,55 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/cyber.css">
-    <title>Mahara-tech: Cyber Security</title>
-</head>
-
-<body>
-    <div class="head">
-        <nav>
-            <div class="logo_ul">
-                <img class='main-logo' src="images/LOGO maharatech.png">
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a> </li>
-                    <li>
-                        <a href="career_talks.html" target="_blank">Career Talks</a></li>
-                    <li>
-                        <a href="technological_tracks.html" target="_blank">Technological Tracks</a></li>
-                    <li>
-                        <a href="industry_parteners.html" target="_blank">Industry Parteners</a></li>
-                    <li>
-                        <a href="#" target="_blank">Freelancing Initiative</a></li>
-                    <li>
-                        <a href="#" target="_blank">Scholarships(ITI Students)</a></li>
-                </ul>
-            </div>
-            <div class="login">
-                <ul>
-                    <!-- icon -->
-                    <li><i class="fa-regular fa-user"></i></li>
-
-                    <li>
-                        <a href="login.php" target="_blank">Login/Register</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <div class="heaad">
-            <div class="h">
-                $var
-            </div>
-            <div class="path">
-                <a href="index.html">Home</a>/Site Pages/<a href="#"> $var</a>
-            </div>
-        </div>
-    </div>
-
+<link rel="stylesheet" href="css/course.css">
+<?php 
+    include 'header/header.php'
+?>
     <div class="section">
         <div class="image">
             <img src="images/Wireless-Networks-Penetration-Testing-en.jpg" alt="">
@@ -102,26 +54,17 @@
             <div class="list">CH07_Bluetooth Attacks</div>
             <div class="list">What is Next?</div>
         </div>
-        <div class="comment">
-            <h3>Add a Comment & Review</h3>
-            <textarea name="" id="" cols="30" rows="15" placeholder="  Add comment"></textarea>
-            <div>
-                <input type="submit" value="Save Comment" class="com">
+        <form action="" method="post">
+            <div class="comment">
+                <h3>Add a Comment & Review</h3>
+                <textarea name="" id="" cols="30" rows="15" placeholder="  Add comment"></textarea>
+                <div>
+                    <input name="comment" type="submit" value="Save Comment" class="com">
+                </div>
+
             </div>
-
-        </div>
-
+        </form>
 
     </div>
-    <div class="footer">
-        <div>
-            <img id="image" src="images/Footerlogos.png" alt="">
-            <img class="contact" src="images/youtu.png" alt="">
-            <img class="contact" src="images/facebook.png" alt="">
-        </div>
-        <p id="copywrite">Copyright © 2020 MAHARA-TECH by ITI. All Rights Reserved</p>
-
-    </div>
-</body>
-
-</html>
+<?php
+include 'header/footer.php';

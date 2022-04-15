@@ -1,14 +1,6 @@
 <div style="background-color: rgb(14, 13, 13);margin: 0px;">
     <div>
-        <img style="padding: 50px;" src="../images/Footerlogos.png" alt="">
-        <img 
-        style="width: 30px;
-            float: right;
-            padding-top: 80px;
-            margin-right: 80px;" 
-        src="images/youtu.png" 
-        alt="youtube logo">
-        <img class="contact" src="images/facebook.png" alt="facebook logo">
+        <img style="padding: 50px;" src="images/Footerlogos.png" alt="">
     </div>
     <p 
     style="color: #FFFFFF;

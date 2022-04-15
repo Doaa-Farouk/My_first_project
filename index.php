@@ -36,7 +36,7 @@
                     <li><i class="fas fa-user"></i></li>
 
                     <li>
-                        <a href="../login.php" target="_blank">Login/Register</a>
+                        <a href="login.php" target="_blank">Login/Register</a>
                     </li>
                 </ul>
             </div>
