@@ -1,3 +1,6 @@
+<?php
+    require 'connect.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,7 +20,7 @@
                 <img class='main-logo' src="images/LOGO maharatech.png">
                 <ul>
                     <li>
-                        <a href="../index.html">Home</a> </li>
+                        <a href="../index.php">Home</a> </li>
                     <li>
                         <a href="../career_talks.html" target="_blank">Career Talks</a></li>
                     <li>
@@ -58,9 +61,15 @@
     <div class="pics">
         <ul>
             <li class="pictures">
-                <a href="cyber.html" target="_blank"><img src="images/cyber-en.png"></a>
+                    <a href="course.php" target="_blank">
+                    <img src="images/cyber-en.png"></a>
+                    
+
             </li>
-            <li class="pictures"><img src="images/ai-en.png"></li>
+            <li class="pictures">
+                    <a href="course.php" target="_blank">
+                    <img src="images/ai-en.png"></a>
+            </li>
             <li class="pictures"><img src="images/backend-en.png"></li>
             <li class="pictures"><img src="images/bc-en.png"></li>
 

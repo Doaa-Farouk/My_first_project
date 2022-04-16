@@ -11,9 +11,8 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .container {
-    width: 1000px;
+    width: 950px;
     margin: 20px auto;
-    /* padding: 10px; */
     border-radius: 4px;
     box-shadow: 0px 0px 5px 3px #ccc;
 }
@@ -173,7 +172,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .articles article .info .down .sale {
-    color: #17095b;
+    color: #7db90f;
     font-size: 1.2rem;
     font-weight: bolder;
 }

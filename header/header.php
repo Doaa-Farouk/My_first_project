@@ -1,3 +1,7 @@
+<?php
+    require 'connect.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +10,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="header/header.css">
-    <link rel="stylesheet" href="footer/footer.css">
     <title>Mahara-tech: $var</title>
 </head>
 
@@ -43,10 +46,39 @@
         </nav>
         <div class="heaad">
             <div class="h">
-                $var
+            <?php
+                $id = 3 ;
+                $select_q = "select * from courses where id =$id";
+                $result = $con->query($select_q);
+                while($row = $result-> fetch())
+                {
+                    echo $row['name'];
+                }
+
+            ?>
             </div>
             <div class="path">
-                <a href="index.html">Home</a>/Site Pages/<a href="#"> $var</a>
+                <a href="index.html">Home</a>/Site Pages/<a href="#"> 
+                    <?php
+                        $select_q = "select * from categories where id =$id";
+                        $result = $con->query($select_q);
+                        while($row = $result-> fetch())
+                        {
+                            echo $row['name'];
+                        }
+
+                    ?>
+                </a>/
+                    <?php
+                        $id = 2;
+                        $select_q = "select * from courses where id =$id";
+                        $result = $con->query($select_q);
+                        while($row = $result-> fetch())
+                        {
+                            echo $row['name'];
+                        }
+
+                        ?>
             </div>
         </div>
     </div>
