@@ -1,10 +1,27 @@
 <link rel="stylesheet" href="css/course.css">
 <?php 
-    include 'header/header.php'
+    include 'header/header.php';
+    require('connect.php');
+?>
+<?php
+    $select_q = 'select * from courses where id=:id';
+    $result = $con-> prepare($select_q);
+    $result -> execute(array(":id" => $_GET['id']));
+    if($result-> rowCount())
+    {
+        $row = $result->fetch();
+        $id = $row['id'];
+        $desc = $row['description'];
+        $req = $row['requirements'];
+        $what = $row['whattolearn'];
+        $content = $row['content'];
+        $img = $row['image'];
+    }
+
 ?>
     <div class="section">
         <div class="image">
-            <img src="images/Wireless-Networks-Penetration-Testing-en.jpg" alt="">
+            <img src="images/<?php $img ?>" alt="">
         </div>
         <div class="right">
             <div class="enroll">
@@ -25,20 +42,28 @@
     </div>
     <div class="section_2">
         <h4>Course Description</h4>
-        <div class="course"> Previously, "wireless" was synonymous with "Wi-Fi," and many organizations deployed complex security systems to protect these networks. Today, wireless security takes on a much broader meaning … not only the security of Wi-Fi systems but also
-            the security of Bluetooth, ZigBee, RFID, NFC, contactless smart cards, proprietary wireless systems, ..etc </div>
-        <div class="course">So it's important for ethical hackers to Understand wireless. And the risks, and vulnerabilities involved with its use. Besides learning to ethically hack they also should learn how to secure networks from hackers. And that is what we will learn
-            in this course to protect our personal data, and devices, or organizations.</div>
+        <div class="course">
+            <?php
+                echo $content ."<br>";
+
+                echo $desc;
+            ?>
+        </div>
         <h4>What you'll learn</h4>
-        After completing this course you will be able to :
+        <!-- After completing this course you will be able to :
         <li> Simulate Smart home using Cisco Packet Tracer. </li>
         <li>Classify the Main Components of a Wireless Network. </li>
         <li>Differentiate between WPA and WPA2. Understand how Wi-Fi Connection works.</li>
         <li>the Wireless Attacks like denial of service attack, Jamming Attacks, Probe Requests, and Handshake Attacks.</li>
         <li>Create a Rogue AP Using Mana-Toolkit. Analyze Packet Types with Wireshark.</li>
-        <li>Specify Bluetooth Vulnerabilities and attacks. Understand ZigBee Standard.</li>
+        <li>Specify Bluetooth Vulnerabilities and attacks. Understand ZigBee Standard.</li> -->
+        <?php
+                echo $what;
+            ?>
         <h4>Requirements</h4>
-        Completion of Computer Network Fundamentals, Introduction to network security courses is required.
+        <?php
+                echo $req;
+            ?>
     </div>
 
     <div class="section_3">

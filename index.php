@@ -59,33 +59,32 @@
     <h5>Learn about the technological tracks provided to you by the Mahara- Tech platform</h5>
 
     <div class="pics">
+        
         <ul>
             <li class="pictures">
-                    <a href="course.php" target="_blank">
-                    <img src="images/cyber-en.png"></a>
+                <?php
+                    $select_q = "select * from categories";
+                    $result = $con->prepare($select_q);
+                    $result->execute();
+                    if($result -> rowCount())
+                    {
+                        $row = $result->fetchAll();
+                        foreach($row as $r)
+                        {
+                            $id = $r['id'];
                     
+                            $img = $r['image'];
+                            echo "
+                        
+                            <a href='course.php?id=$id' target='_blank'>
+                            <img src='images/$img'></a>
 
-            </li>
-            <li class="pictures">
-                    <a href="course.php" target="_blank">
-                    <img src="images/ai-en.png"></a>
-            </li>
-            <li class="pictures"><img src="images/backend-en.png"></li>
-            <li class="pictures"><img src="images/bc-en.png"></li>
-
-        </ul>
-        <ul>
-            <li class="pictures"><img src="images/elearning-en.png"></li>
-            <li class="pictures"><img src="images/freelancing-en.png"></li>
-            <li class="pictures"><img src="images/frontend-en.png"></li>
-            <li class="pictures"><img src="images/Full-stack-Development-using-mern-en.png"></li>
-        </ul>
-        <ul>
-            <li class="pictures"><img src="images/ai-en.png"></li>
-            <li class="pictures"><img src="images/backend-en.png"></li>
-            <li class="pictures"><img src="images/bc-en.png"></li>
-            <li class="pictures"><img src="images/cyber-en.png"></li>
-        </ul>
+                            ";
+                        }
+                    } 
+                ?>
+            </li>    
+        </ul> 
     </div>
 
     <div>

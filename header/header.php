@@ -46,39 +46,39 @@
         </nav>
         <div class="heaad">
             <div class="h">
-            <?php
-                $id = 3 ;
-                $select_q = "select * from courses where id =$id";
+            <!-- <?php
+                // $id = $_GET[':id'] ;
+                
+                $select_q = "select * from courses";
                 $result = $con->query($select_q);
                 while($row = $result-> fetch())
                 {
                     echo $row['name'];
                 }
 
-            ?>
+            ?> -->
             </div>
             <div class="path">
                 <a href="index.html">Home</a>/Site Pages/<a href="#"> 
-                    <?php
-                        $select_q = "select * from categories where id =$id";
+                    <!-- <?php
+                        $select_q = "select * from categories";
                         $result = $con->query($select_q);
                         while($row = $result-> fetch())
                         {
                             echo $row['name'];
                         }
 
-                    ?>
+                    ?> -->
                 </a>/
-                    <?php
-                        $id = 2;
-                        $select_q = "select * from courses where id =$id";
+                    <!-- <?php
+                        $select_q = "select * from courses";
                         $result = $con->query($select_q);
                         while($row = $result-> fetch())
                         {
                             echo $row['name'];
                         }
 
-                        ?>
+                        ?> -->
             </div>
         </div>
     </div>
