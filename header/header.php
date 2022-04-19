@@ -44,41 +44,34 @@
                 </ul>
             </div>
         </nav>
+
         <div class="heaad">
             <div class="h">
-            <!-- <?php
-                // $id = $_GET[':id'] ;
-                
-                $select_q = "select * from courses";
-                $result = $con->query($select_q);
-                while($row = $result-> fetch())
-                {
-                    echo $row['name'];
-                }
-
-            ?> -->
+                <!-- this is course name -->
+                <?php
+                    $select_q = 'select * from categories';
+                    $result = $con-> prepare($select_q);
+                    $result-> execute();
+                    if($result->rowCount())
+                    {   
+                        $row = $result->fetchAll();
+                        foreach($row as $r)
+                        {
+                            $id = $r['id'];
+                            $name=  $r['name'];
+                        }
+                        echo $name; 
+                    }
+                ?>
             </div>
             <div class="path">
-                <a href="index.html">Home</a>/Site Pages/<a href="#"> 
-                    <!-- <?php
-                        $select_q = "select * from categories";
-                        $result = $con->query($select_q);
-                        while($row = $result-> fetch())
-                        {
-                            echo $row['name'];
-                        }
-
-                    ?> -->
-                </a>/
-                    <!-- <?php
-                        $select_q = "select * from courses";
-                        $result = $con->query($select_q);
-                        while($row = $result-> fetch())
-                        {
-                            echo $row['name'];
-                        }
-
-                        ?> -->
+                <a href="index.php">Home /Courses /</a>
+                <a href="#"> 
+                    this is category name
+                </a>
+                <a href="#">
+                    /this is course name
+                </a>
             </div>
         </div>
     </div>

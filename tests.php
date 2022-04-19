@@ -11,20 +11,16 @@
         // $result = $con -> exec($insert_q);
 
 ?>
-<li class="pictures">
-            </li>
-            <!-- <li class="pictures"><img src="images/backend-en.png"></li>
-            <li class="pictures"><img src="images/bc-en.png"></li>
-
-        </ul>
-        <ul>
-            <li class="pictures"><img src="images/elearning-en.png"></li>
-            <li class="pictures"><img src="images/freelancing-en.png"></li>
-            <li class="pictures"><img src="images/frontend-en.png"></li>
-            <li class="pictures"><img src="images/Full-stack-Development-using-mern-en.png"></li>
-        </ul>
-        <ul>
-            <li class="pictures"><img src="images/ai-en.png"></li>
-            <li class="pictures"><img src="images/backend-en.png"></li>
-            <li class="pictures"><img src="images/bc-en.png"></li>
-            <li class="pictures"><img src="images/cyber-en.png"></li>
+$select_q = 'select * from categories where id=:id';
+$result = $con->prepare($select_q);
+$result->execute(array(':id' =>$_GET['id']));
+if($result->rowCount())
+{
+        $row = $result->fetch();
+        $id = $row['id'];
+        $name = $row['name'];
+        
+        echo $name;
+}
+                                        
+        

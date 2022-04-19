@@ -21,7 +21,7 @@
 ?>
     <div class="section">
         <div class="image">
-            <img src="images/<?php $img ?>" alt="">
+            <?php echo "<img src='images/$img' alt=''>" ?>
         </div>
         <div class="right">
             <div class="enroll">

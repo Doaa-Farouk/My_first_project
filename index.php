@@ -9,7 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maharat Tech</title>
-    <link rel="stylesheet" href="../fontawesome-free-6.0.0-web/css/regular.css" />
+    <link rel="stylesheet" href="../fontawesome-free-6.0.0-web/css/all.min.css" /> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/index.css">
 </head>
 
@@ -36,8 +37,7 @@
             <div class="login">
                 <ul>
                     <!-- icon -->
-                    <li><i class="fas fa-user"></i></li>
-
+                    <i class='fas fa-user'></i>
                     <li>
                         <a href="login.php" target="_blank">Login/Register</a>
                     </li>
@@ -75,8 +75,8 @@
                     
                             $img = $r['image'];
                             echo "
-                        
-                            <a href='course.php?id=$id' target='_blank'>
+                            <a href='header/header.php?id=$id' target='_blank'>
+                            <a href='veiw.php?id=$id' target='_blank'>
                             <img src='images/$img'></a>
 
                             ";
