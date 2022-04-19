@@ -31,7 +31,7 @@
             </div>
             <div class="down">
                 <h3>Course Features</h3>
-                <pre>Chapters                    8</pre>
+                <pre>cha                    8</pre>
                 <hr>
                 <pre>Vedios                      86</pre>
                 <hr>
