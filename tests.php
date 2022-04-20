@@ -23,4 +23,4 @@ if($result->rowCount())
         echo $name;
 }
                                         
-        
+<a href='header/header.php?id=$id' target='_blank'>

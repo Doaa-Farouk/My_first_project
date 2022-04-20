@@ -44,33 +44,57 @@
                 </ul>
             </div>
         </nav>
+    <?php
+        $select_q = 'select * from categories where id=:id';
+        $result = $con-> prepare($select_q);
+        $result-> execute(array(":id" => $_GET['id']));
+        
+        if($result->rowCount())
+        {   
+            $row = $result->fetchAll();
+            foreach($row as $r)
+            {
+                $categoryid = $r['id'];
+                $categoryname=  $r['name'];
+            }
+        }
 
+        $select_c = 'select * from courses where cat_id=:id';
+        $result_c = $con-> prepare($select_c);
+        $result_c -> execute(array(":id" => $_GET['id']));
+
+            $rows = $result_c->fetchAll();
+            foreach($rows as $rr)
+            {
+                $course_id = $rr['id'];
+                $course_name = $rr['name'];
+            }
+        
+    ?>
         <div class="heaad">
             <div class="h">
-                <!-- this is course name -->
-                <?php
-                    $select_q = 'select * from categories';
-                    $result = $con-> prepare($select_q);
-                    $result-> execute();
-                    if($result->rowCount())
-                    {   
-                        $row = $result->fetchAll();
-                        foreach($row as $r)
-                        {
-                            $id = $r['id'];
-                            $name=  $r['name'];
-                        }
-                        echo $name; 
-                    }
+                <?php 
+                    if(!empty($categoryname))
+                        echo $categoryname; 
+                    if(!empty($coursename))
+                        echo $coursename;
                 ?>
             </div>
             <div class="path">
-                <a href="index.php">Home /Courses /</a>
+                <a href="index.php">Home /Courses/</a>
                 <a href="#"> 
-                    this is category name
+                    <?php 
+                        if(!empty($categoryname))
+                        echo $categoryname; 
+                        if(!empty($coursename))
+                        echo $coursename;
+                    ?>
                 </a>
                 <a href="#">
-                    /this is course name
+                    <?php
+                        if(!empty($coursename))
+                            echo $coursename;
+                    ?>
                 </a>
             </div>
         </div>
